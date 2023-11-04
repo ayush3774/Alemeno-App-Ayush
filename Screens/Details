@@ -1,0 +1,38 @@
+const Details = [
+    {
+      id: "1",
+      title: "Web Development",
+      image: require("/Users/ayushpriyadarshi/Desktop/Alemeno/AlemenoApp/Screens/WebDev.jpeg"),
+      description:
+        "Are you ready to embark on a journey into the exciting world of web development? Our Web Development Masterclass course is your gateway to becoming a proficient web developer. Whether you're a beginner with no prior coding experience or an experienced programmer looking to expand your skills, this course has something for everyone. ",
+      course1: "html",
+      course2: "css",
+      course3: "javascript",
+      price: 5000,
+    },
+    {
+      id: "2",
+      title: "Java Script",
+      image: require("/Users/ayushpriyadarshi/Desktop/Alemeno/AlemenoApp/Screens/maxresdefault.jpeg"),
+      description:
+        "Master the heart of the web with our JavaScript Essentials course. Whether you're new to programming or looking to enhance your skills, this course equips you with the fundamentals of JavaScript, the language that powers interactive and dynamic web experiences. ",
+      course1: "JavaScript",
+      course2: "Algorithm",
+      course3: "Data Structure",
+      price: 1000,
+    },
+    {
+      id: "3",
+      title: "React Native",
+      image: require("/Users/ayushpriyadarshi/Desktop/Alemeno/AlemenoApp/Screens/REACT.png"),
+      description:
+        "Unlock the power of cross-platform mobile app development with our React Native Mobile App Development course. Whether you're an aspiring mobile app developer or a seasoned programmer looking to expand your horizons, this course equips you with the skills to create stunning, high-performance mobile applications. ",
+      price: 1000,
+      instructor: 'John Doe',
+      schedule: 'Tuesdays and Thursdays, 6:00 PM - 8:00 PM',
+      location: 'Online',
+    },
+  ];
+  
+  export default Details;
+  

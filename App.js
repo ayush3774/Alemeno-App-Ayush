@@ -1,20 +1,30 @@
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import CourseDetailsScreen from './Screens/CourseDetailsScreen';
+import CourseScr from './Screens/CourseScr';
+import EnrollmentForm from './Screens/EnrollmentForm';
+import EnrollmentConfirmation from './Screens/EnrollmentConfirmation';
+import login from './Screens/login';
+import StudentDashboard from './Screens/StudentDashboard';
 
-export default function App() {
+const Stack = createStackNavigator();
+
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+<Stack.Navigator initialRouteName="CoursesScr">
+  <Stack.Screen name="CoursesScr" component={CourseScr} />
+  <Stack.Screen name="CourseDetails" component={CourseDetailsScreen} />
+  <Stack.Screen name="Enroll" component={EnrollmentForm} />
+  <Stack.Screen name="Confirmation" component={EnrollmentConfirmation} />
+  <Stack.Screen name="login" component={login} />
+  <Stack.Screen name="Dashboard" component={StudentDashboard} />
+</Stack.Navigator>
+<StatusBar style="auto" />
+    </NavigationContainer>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
